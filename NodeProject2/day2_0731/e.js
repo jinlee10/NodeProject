@@ -12,6 +12,7 @@
 // nodejs.org에서 함 봐라
 
 const url = require('url');	//자바의 final과 같다
+// 쿼리스트링모듈
 const querystring = require('querystring');	//require하는애들은 대부분 고쳐지는 경우가 ㅇ벗어 const쓴다
 
 var surl = 'https://user:pass@sub.host.com:8080/p/a/t/h?query=string&name=korea&age=20#hash';
@@ -28,7 +29,6 @@ var obj = querystring.parse(currenturl.query); //querystring을 json객체로만
 console.log('query: ' + currenturl.query); //?다음부터 (있으면) #앞까지오는애들
 
 
-// 쿼리스트링모듈
 
 
 
