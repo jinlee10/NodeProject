@@ -5,6 +5,8 @@
 const fs = require('fs');
 const path = require('path');
 
+// join은 concat이 절대 아냐!
+// 
 var newFolder = path.join(__dirname, 'data');	//경로명 하위에 데이터
 
 fs.stat(newFolder, function(err, stat){	//폴더 존재하는지 확인
