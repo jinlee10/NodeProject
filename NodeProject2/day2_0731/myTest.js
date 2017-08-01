@@ -42,13 +42,13 @@ var newFolder1 = path.join(__dirname, 'folder2');
 s
 myfs.makeMyDir(newFolder, (err, stat) => {
 	if(err){
-		fs.mkdir(newFolder, 0666, function(err)){
+		fs.mkdir(newFolder, 0666, function(err){
 			if(err){
 				console.log(err);
 			}else{
 				console.log('successfully made a folder'));
 			}
-		}
+		});
 	}else{
 		console.log('folder exists');
 	}
